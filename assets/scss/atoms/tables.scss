@@ -4,6 +4,31 @@
     
     @media only screen {
 
+      .table {
+        width: 100%;
+        
+        td, 
+        th {
+          padding: 10px;
+          vertical-align: middle; 
+        } 
+
+        th:nth-child(2) {
+          width: 30%;
+        }
+
+        th:nth-child(3),
+        td:nth-child(3) {
+          text-align: left;
+        }
+        
+        tbody {
+          tr:nth-child(odd) {
+            background: #dedede;
+          }
+        }
+      }
+
     }
 
 
@@ -12,5 +37,12 @@
      */
 
     @media only screen and (min-width: $breakpoint) {
+
+      .table { 
+        td, 
+        th {
+          padding: 20px; 
+        }  
+      }
 
     }
